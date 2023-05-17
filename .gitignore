@@ -1,0 +1,37 @@
+# Local .terraform directories
+**/.terraform/*
+
+# builds
+builds
+/builds/*
+
+# Ignore everything in fct directories
+/src/*/**
+
+# But don't ignore these files
+!/src/*/requirements.txt
+!/src/*/index.py
+
+# Crash log files
+crash.log
+
+# Override files
+override.tf
+
+# Exclude any sensitive files
+*.pem
+*.key
+*.tfstate*
+*.tfvars
+
+# Exclude provider binary files
+*.tfplugin*
+
+# Exclude any generated files
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+# Exclude Terraform CLI configuration files
+.terraformrc
+terraform.rc
